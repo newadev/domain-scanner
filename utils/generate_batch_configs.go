@@ -15,7 +15,7 @@ func generateBatchConfigs() {
 	args := os.Args[1:]
 	batchStart := 0
 	batchSize := 26
-	baseDomain := ".de"
+	baseDomain := ".com"
 	domainLength := 4
 	pattern := "D"
 	outputDir := "./results"
