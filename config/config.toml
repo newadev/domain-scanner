@@ -4,10 +4,10 @@
 # Domain generation configuration
 [domain]
 # Domain name length
-length = 3
+length = 4
 
 # Domain suffix (must start with a dot)
-suffix = ".li"
+suffix = ".com"
 
 # Domain pattern:
 # d: Pure numbers (e.g., 123.li)
@@ -22,7 +22,7 @@ regex_filter = ""
 # Scanner behavior configuration
 [scanner]
 # Delay between queries in milliseconds (optimized for speed)
-delay = 500
+delay = 5000
 
 # Number of concurrent workers (optimized)
 workers = 15
