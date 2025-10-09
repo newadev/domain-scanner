@@ -112,7 +112,7 @@ on:
       domain_length:
         description: 'Domain name length'
         required: true
-        default: '4'
+        default: '5'
         type: choice
         options:
           - 2
