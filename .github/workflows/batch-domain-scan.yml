@@ -96,7 +96,7 @@ on:
       base_domain:
         description: 'Domain suffix to scan'
         required: true
-        default: '.com'
+        default: '.site'
         type: choice
         options:
           - .de
@@ -109,10 +109,11 @@ on:
           - .me
           - .eu
           - .nc.me
+          - .site
       domain_length:
         description: 'Domain name length'
         required: true
-        default: '5'
+        default: '4'
         type: choice
         options:
           - 2
