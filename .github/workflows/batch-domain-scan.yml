@@ -1,6 +1,9 @@
 name: Batch Domain Scanner
 
 on:
+  push:
+    branches:
+      - main 
   workflow_dispatch:
     inputs:
       batch_start:
@@ -80,7 +83,7 @@ on:
       max_parallel:
         description: 'Maximum number of concurrent jobs (1-10)'
         required: true
-        default: '5'
+        default: '10'
         type: choice
         options:
           - 1
@@ -113,7 +116,7 @@ on:
       domain_length:
         description: 'Domain name length'
         required: true
-        default: '4'
+        default: '5'
         type: choice
         options:
           - 2
@@ -124,7 +127,7 @@ on:
       pattern:
         description: 'Domain pattern'
         required: true
-        default: 'D'
+        default: 'd'
         type: choice
         options:
           - 'D'  # Letters
