@@ -96,7 +96,7 @@ on:
       base_domain:
         description: 'Domain suffix to scan'
         required: true
-        default: '.site'
+        default: '.me'
         type: choice
         options:
           - .de
